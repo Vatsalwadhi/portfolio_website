@@ -599,7 +599,7 @@ section {
     text-align: center;
     background-color: #1f1f1f;
     position: relative;
-    cursor: url('images/large-cursor.cur'), auto; /* Path to your custom large cursor */
+    cursor: url('large-cursor.cur'), auto; /* Path to your custom large cursor */
 }
 
 /* Skills Section with Custom Large Cursor */
