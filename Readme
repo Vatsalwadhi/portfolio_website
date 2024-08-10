@@ -26,5 +26,5 @@ This portfolio site is designed to provide an interactive and engaging experienc
 To view or modify the site locally, clone this repository and open the `index.html` file in a web browser.
 
 ```bash
-git clone vatsalwadhi.online
+git clone www.vatsalwadhi.online
 cd your-repo
