@@ -15,3 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', checkVisibility);
     checkVisibility(); // Check on load in case elements are already visible
 });
+window.addEventListener('scroll', () => {
+    const introBg = document.querySelector('.intro-bg');
+    if (window.scrollY > 50) { // Adjust value as needed
+        introBg.classList.add('fade-out');
+    } else {
+        introBg.classList.remove('fade-out');
+    }
+});
