@@ -707,4 +707,23 @@ h1, h2, p {
         height: auto;
     }
 }
+/* Full-page Background Animation */
+.intro-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('your-background-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: opacity 1s ease-out;
+}
+
+.intro-bg.fade-out {
+    opacity: 0;
+}
+
+/* Other existing CSS rules... */
 
