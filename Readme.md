@@ -1,4 +1,4 @@
-# <h1 style="font-size:36px;">Vats alWadhi's Portfolio</h1>
+# <h1 style="font-size:36px;">Vats Alwadhi's Portfolio</h1>
 
 Welcome to my portfolio site! This repository contains the code for my personal portfolio website, showcasing my skills, projects, and background.
 
