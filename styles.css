@@ -6,6 +6,7 @@ body, html {
     color: #e0e0e0;
     background-color: #121212;
     scroll-behavior: smooth;
+    
 }
 
 /* Navbar */
@@ -43,45 +44,6 @@ body, html {
     color: #0071e3;
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('image.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding-top: 80px; /* To avoid overlap with fixed navbar */
-}
-
-.hero .hero-content {
-    max-width: 800px;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.hero .cta-button {
-    background-color: #0071e3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-. .cta-button:hover {
-    background-color: #005bb5;
-}
 
 /* Section Styles */
 section {
@@ -204,6 +166,48 @@ body, html {
 
 .navbar .nav-links li a:hover {
     color: #0071e3;
+}
+
+/* Hero Section */
+.hero {
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding-top: 80px; /* To avoid overlap with fixed navbar */
+}
+
+.hero .hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    background-color: #0071e3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #005bb5;
+}
+
 /* Section Styles */
 section {
     padding: 80px 20px; /* Add padding to account for the fixed navbar */
@@ -490,6 +494,7 @@ section {
     background-color: #0071e3;
     border-color: #0071e3;
 }
+
 /* Footer */
 .footer {
     padding: 20px;
@@ -555,8 +560,9 @@ section {
     padding: 80px 20px;
     text-align: center;
     background-color: #1f1f1f;
-    position: relative;
-    cursor: url('large-cursor.cur'), auto; /* Path to your custom large cursor */
+
+    color: #e0e0e0;
+    cursor: url('curs.cur'), auto; /* Path to your custom large cursor */
 }
 
 /* Skills Section with Custom Large Cursor */
@@ -567,7 +573,13 @@ section {
     color: #e0e0e0;
     cursor: url('heart.cur'), auto; /* Path to your custom large cursor */
 }
-
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    cursor: url('cursor1.cur'), auto; /* Path to your custom large cursor */
+}
 /* General styling */
 body {
     font-family: "Clear Sans", Helvetica, serif;
@@ -579,19 +591,125 @@ h1, h2, p {
     color: #fff; /* Ensure text is visible against the dark background */
 }
 
-
-/* Full-page Background Animation */
-.intro-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    background: url('image.jpg') no-repeat center center;
-    background-size: cover; /* Ensure the background image covers the entire container */
-    z-index: -1; /* Place it behind other content */
+/* Styling for the game section */
+.game {
+    padding: 20px;
+    max-width: 500px; /* Adjust the width as needed */
+    margin: auto;
+    text-align: center;
 }
 
+.container {
+    background-color: #4a4a4a; /* Darker background for the game */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: inline-block; /* Ensures the container takes only the necessary space */
+}
 
-/* Other existing CSS rules... */
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 456px;
+    height: 456px;
+    background-color: #BBADA0;
+    border: 7px solid #BBADA0;
+    border-radius: 6px;
+    margin: 20px auto 0; /* Center the grid and add margin on top */
+}
+
+.grid div {
+    width: 100px;
+    height: 100px;
+    margin: 7px;
+    border-radius: 3px;
+    background-color: #EEE4DA;
+    color: #AFA192;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1.6;
+}
+
+.score-container {
+    text-align: center;
+    width: 70px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: #8f7a66;
+    color: #FFF;
+}
+
+#score {
+    font-size: 30px;
+}
+
+.score-title {
+    font-size: 16px;
+}
+
+/* Add shadows to grid cells on hover */
+.grid div:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .grid {
+        width: 100%;
+        height: auto;
+        margin: 20px auto 0; /* Ensure the grid is centered */
+    }
+
+    .grid div {
+        width: 20%; /* Make the grid cells responsive */
+        height: auto;
+    }
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    max-height: 80px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em; /* Adjust font size as needed */
+}
+.logo-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .logo {
+    display: block;
+  }
+  
+  .effect {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background: radial-gradient(circle at center, rgba(0,0,0,0.2), transparent);
+    transform: rotateX(60deg);
+    filter: blur(8px);
+    pointer-events: none; /* So it does not interfere with interactions */
+  }
+ 
