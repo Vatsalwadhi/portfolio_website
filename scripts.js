@@ -15,11 +15,24 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', checkVisibility);
     checkVisibility(); // Check on load in case elements are already visible
 });
-window.addEventListener('scroll', () => {
-    const introBg = document.querySelector('.intro-bg');
-    if (window.scrollY > 50) { // Adjust value as needed
-        introBg.classList.add('fade-out');
-    } else {
-        introBg.classList.remove('fade-out');
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const effect = document.querySelector('.effect');
+    
+    function adjustEffect() {
+      const logoContainer = document.querySelector('.logo-container');
+      const containerWidth = logoContainer.offsetWidth;
+      const containerHeight = logoContainer.offsetHeight;
+      
+      // Adjust the size of the effect based on the logo container size
+      effect.style.width = `${containerWidth * 0.2}px`;
+      effect.style.height = `${containerHeight * 0.2}px`;
     }
-});
+
+    // Initial adjustment
+    adjustEffect();
+
+    // Adjust on window resize
+    window.addEventListener('resize', adjustEffect);
+  });
+
