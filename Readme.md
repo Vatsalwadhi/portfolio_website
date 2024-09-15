@@ -19,7 +19,7 @@ This portfolio site is designed to provide an interactive and engaging experienc
 - **HTML**: Structure of the site.
 - **CSS**: Styling and responsive design.
 - **JavaScript**: Interactive elements and animations.
-- **2048 Game**: An interactive 2048 game embedded in the portfolio.
+
 
 ## <h2 style="font-size:30px;">Getting Started</h2>
 
