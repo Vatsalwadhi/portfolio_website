@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vats Alwadhi | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Full-page Background Animation -->
     <div class="intro-bg"></div>
-<link rel="icon" href="img.png" type="image/png">
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
@@ -93,22 +94,19 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skill-item">
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript, React, Node.js</p>
-            </div>
-            <div class="skill-item">
-                <h3>Data Science</h3>
-                <p>Python, Pandas, NumPy, Machine Learning</p>
-            </div>
-            <!-- Add more skill items as needed -->
+        <div class="skills-grid">
+            <div class="skill-item c">C</div>
+            <div class="skill-item cpp">C++</div>
+            <div class="skill-item java">Java</div>
+            <div class="skill-item html">HTML</div>
+            <div class="skill-item css">CSS</div>
+            <div class="skill-item js">JavaScript</div>
+            <div class="skill-item mysql">MySQL</div>
+            <div class="skill-item python">Python</div>
+            <div class="skill-item python">Django</div>
         </div>
-        <div class="animation-container">
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
-        </div>
-    </section>
+    
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -134,11 +132,11 @@
     <script>
         // JavaScript to handle background fade-out on scroll
         window.addEventListener('scroll', function() {
-            const introBg = document.querySelector('.intro-bg');
-            if (window.scrollY > 100) {
-                introBg.classList.add('fade-out');
+            const hero = document.querySelector('.hero');
+            if (window.scrollY > 0) {
+                hero.classList.add('fade-out');
             } else {
-                introBg.classList.remove('fade-out');
+                hero.classList.remove('fade-out');
             }
         });
     </script>
